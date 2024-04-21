@@ -12,7 +12,7 @@ class MenestrelApi:
 
         self.logger.info("Menestrel API initialisation")
 
-        static_folder = os.path.join(os.getcwd() + "/interface/static/")
+        static_folder = os.path.join(os.getcwd() + "/interface/templates/static")
         self.logger.info(f"Looking for templates, CSS and JS files at '{static_folder}'")
 
         self.app = Flask(__name__, static_folder=static_folder)
