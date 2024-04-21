@@ -15,11 +15,20 @@ class MenestrelBot(discord.Client):
 
     async def on_ready(self):
         self.logger.debug(f"Logged in as {self.user}")
+
+        self.loop = asyncio.get_running_loop()
+
+        # Set the bot as invisible
+        await self.change_presence(status=discord.Status.invisible)
+
         self.logger.debug("Available guilds and channels are:")
         for guild in self.guilds:
             self.logger.debug(f"\t- {guild}")
             for channel in guild.voice_channels:
                 self.logger.debug(f"\t\t- {channel}")
+
+    def get_loop(self):
+        return self.loop
 
     async def setup_hook(self) -> None:
         # TODO
