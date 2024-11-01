@@ -17,8 +17,10 @@ class MenestrelApi:
                            version=self.VERSION)
 
         self.app.include_router(router)
+        self.config = uvicorn.Config(self.app, host="0.0.0.0", port=8000, reload=True)
+        self.server = uvicorn.Server(self.config)
 
-    def run(self):
-        uvicorn.run(app=self.app,
-                    host="192.168.0.33",
-                    port=8000)
+    async def run(self):
+        await self.server.serve()
+
+        
