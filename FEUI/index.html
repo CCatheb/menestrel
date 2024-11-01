@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ménestrel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Top part with buttons (control panel) & title-->
+    <section>
+
+        <div class="control-panel">
+
+            <div class="onOff">
+                <img src="img/off.png" alt="" id="on-off" class="btn-icon">
+                <p id="statusText-onOff">On</p>
+            </div>
+        
+            <div class="log">
+                <img src="img/login.png" alt="" id="login-logout" class="btn-icon">
+                <p id="statusText-loginLogout">Login</p>
+            </div>
+
+        </div>
+
+        <h1>Ménestrel</h1>
+
+    </section>
+
+    <!-- Middle part with 3 columns for each section (Scene, Ambiance, SFX) -->
+    <section class="container">
+
+        <!-- First colum - Scene -->
+        <section class="column">
+
+            <h2>Scène</h2>
+
+            <div class="container-btn">
+                <button class="scene-btn">Ville</button>
+                <button class="scene-btn">Village</button>
+                <button class="scene-btn">Ruelle<br>sombre</button>
+                <button class="scene-btn">Plaine</button>
+                <button class="scene-btn">Marais</button>
+                <button class="scene-btn">Cave</button>
+                <button class="scene-btn">Cimetière</button>
+                <button class="scene-btn">Forêt</button>
+                <button class="scene-btn">Temple</button>
+                <button class="scene-btn">Taverne</button>
+                <button class="scene-btn">Montagne</button>
+                <button class="scene-btn">Marché</button>
+            </div>
+
+        </section>
+
+        <!-- Second column - Ambiance -->
+        <section class="column">
+
+            <h2>Ambiance</h2>
+
+            <img src="img/soleil.png" alt="" id="day-night" class="btn-icon">
+
+            <div class="phase">
+
+                <div class="h3-phase container-reset">
+                    <h3>Phase</h3>
+                    <p id="reset-phase" class="reset">Reset</p>
+                </div>
+    
+                <div class="container-btn">
+                    <button class="phase-btn">Exploration</button>
+                    <button class="phase-btn">Combat</button>
+                    <button class="phase-btn">Repos</button>
+                </div>
+
+            </div>
+
+            <div class="meteo">
+
+                <div class="h3 container-reset">
+                    <h3>Météo</h3>
+                    <p id="reset-meteo" class="reset">Reset</p>
+                </div>
+
+                <div class="container-btn">
+                    <button class="meteo-btn">Pluie</button>
+                    <button class="meteo-btn">Orage</button>
+                    <button class="meteo-btn">Vent</button>
+                </div>
+
+            </div>
+
+            <div class="ambiance">
+
+                <h3>Ambiance</h3>
+
+                <div class="container-btn">
+                    <button class="ambiance-btn">Rivière</button>
+                    <button class="ambiance-btn">Cascade</button>
+                    <button class="ambiance-btn">Vague</button>
+                    <button class="ambiance-btn">Murmures</button>
+                    <button class="ambiance-btn">Feu de<br>camp</button>
+                    <button class="ambiance-btn">Cigales</button>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Third column - SFX -->
+        <section class="column">
+
+            <h2>SFX</h2>
+
+            <div class="container-btn">
+                <button>Victoire</button>
+                <button>Echec<br>critique</button>
+                <button>Loup</button>
+                <button>Cloche</button>
+                <button>Plouf</button>
+                <button>Chute<br>de corps</button>
+                <button>Petite<br>explosion</button>
+                <button>Grosse<br>explosion</button>
+                <button>Dragon</button>
+            </div>
+            
+        </section>
+
+    </section>
+
+    <footer>
+        <p class="designed">Designed by Enora lafforgue</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

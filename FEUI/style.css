@@ -1,0 +1,150 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Yeseva+One&display=swap');
+
+
+/* Reset CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* colors */
+    --primary : #9FB8AD;
+    --primary25 : rgba(159, 184, 173, 0.25);
+    --light : #E6E8E6;
+    --black : #3F403F;
+
+    /* colors setting */
+    background-color: var(--black);
+    color: var(--light);
+
+    /* font setting */
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+h1{
+    font-family: 'Yeseva One', serif;
+    font-size: 40px; 
+    margin: 35px 0;
+    text-align: center;
+}
+
+h2{
+    font-family: 'Yeseva One', serif;
+    font-size: 28px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+h3{
+    font-family: 'Yeseva One', serif;
+    font-size: 22px;
+    margin-top: 40px;
+    margin-bottom: 25px;
+}
+
+p{
+    font-size: 14px;
+}
+
+img{
+    height: 48px;
+    width: 48px;
+}
+
+.btn-icon{
+    cursor: pointer;
+    background-color: var(--primary25);
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.onOff, .log{
+    position: absolute;
+    top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.onOff img, .log img{
+    margin-bottom: 10px;
+}
+
+.onOff{
+    left: 20px;
+}
+
+.log{
+    left: 90px;
+}
+
+.container{
+    display: grid;
+    margin: 0 100px;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 80px;
+}
+
+.column{
+    background-color: var(--black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-btn{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 15px;
+}
+
+button{
+    background-color: var(--black);
+    color: var(--primary);
+    border-radius: 20px;
+    border: 2px solid var(--primary);
+    font-size: 18px;
+    height: 70px;
+    width: 138px;
+    cursor: pointer;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+button:active{
+    background-color: var(--primary);
+    color: var(--black);
+}
+
+.active{
+    background-color: var(--primary);
+    color: var(--black);
+}
+
+.container-reset{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 50px;
+}
+
+.reset{
+    font-family: 'Josefin Sans', sans-serif;
+    cursor: pointer;
+}
+
+.reset:hover{
+    text-decoration: underline;
+}
+
+.designed{
+    margin: 50px 0;
+    text-align: center;
+    font-family: 'Yeseva One', serif;
+}
