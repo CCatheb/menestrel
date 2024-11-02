@@ -154,3 +154,4 @@ cython_debug/
 
 # Ignore config.ini
 config.ini
+database.json
