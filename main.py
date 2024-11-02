@@ -15,8 +15,6 @@ async def main():
 
     config = load_config()
     
-    mf = MusicFinder(config)
-    
     bot = MenestrelBot(intents=discord.Intents.all())
     api = MenestrelApi(config, bot)
     await asyncio.gather(api.run(),

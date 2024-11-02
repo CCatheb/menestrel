@@ -3,6 +3,10 @@ import discord
 from utils.logger import CustomLogger
 
 class MenestrelBot(discord.Client):
+    """This is the main class for the bot
+    
+    Define all methods needed to be executed by the bot on API calls below.
+    """
 
     logger = CustomLogger.get_logger("BTDC")
 
@@ -11,7 +15,6 @@ class MenestrelBot(discord.Client):
         self.logger.debug(f"Logged as {self.user.name} | {self.user.id}")
 
     async def on_message(self, message):
-
         if message.author.id == self.user.id:
             return
         

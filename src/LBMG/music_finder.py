@@ -8,6 +8,7 @@ import os
 from utils.logger import CustomLogger
 
 class MusicFinder:
+    """This class is the part of the bot in charge of finding a sound element matching the requested scene/phase/etc"""
 
     def __init__(self, config: ConfigParser):
 
@@ -22,7 +23,17 @@ class MusicFinder:
         else:
             self.logger.error("Database not found at given path")
 
-    def get_music(self, scene: str, phase: str) -> Optional[Dict]:
+    def get_music(self, scene: str, phase: str) -> str:
+        """This method finds all musics matching given scene and phase.
+        Chooses one randomly if multiple results are given.
+
+        Args:
+            scene (str): Asked scene
+            phase (str): Asked phase
+
+        Returns:
+            str: Path to the music
+        """
         Audio = Query()
         
         self.logger.debug(f"Serching music for scene = {scene} and phase = {phase}")
@@ -33,7 +44,7 @@ class MusicFinder:
         )
 
         if result:
-            return random.choice(result)
+            return random.choice(result)["path"]
 
         self.logger.warning("No music found for specified scene and phase.")
         return None

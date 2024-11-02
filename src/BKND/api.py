@@ -19,13 +19,15 @@ class MenestrelApi:
 
         self.app.include_router(router)
 
+        # This middelware is for avoiding browsers to cry
         self.app.add_middleware(middleware_class=CORSMiddleware,
-                                allow_origins=["http://menestrel"],  # Ajouter les domaines autorisés ici
+                                allow_origins=["http://menestrel"],
                                 allow_credentials=True,
-                                allow_methods=["*"],  # Autoriser toutes les méthodes (GET, POST, etc.)
-                                allow_headers=["*"],  # Autoriser tous les headers
+                                allow_methods=["*"],
+                                allow_headers=["*"],
                             )
 
+        # This is the bot, we need it to call its methods when API gets called
         self.app.state.bot = bot
         self.config = uvicorn.Config(self.app, host="0.0.0.0", port=int(config["API"]["Port"]), reload=True)
         self.server = uvicorn.Server(self.config)
