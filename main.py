@@ -14,11 +14,10 @@ async def main():
 
     config = load_config()
 
-    api = MenestrelApi()
     bot = MenestrelBot(intents=discord.Intents.all())
+    api = MenestrelApi(bot)
     await asyncio.gather(api.run(),
                          bot.start(config["Discord"]["Token"]))
 
 if __name__ == "__main__":
-
     asyncio.run(main())

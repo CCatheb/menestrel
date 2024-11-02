@@ -1,4 +1,4 @@
-from fastapi import APIRouter, HTTPException
+from fastapi import APIRouter, HTTPException, Request
 from pydantic import BaseModel
 from utils.logger import CustomLogger
 
@@ -9,8 +9,10 @@ class Validator(BaseModel):
     value: str
 
 @router.post("/scene")
-async def scene(scene: Validator):
+async def scene(request: Request, scene: Validator):
     logger.info("scene " + scene.value)
+    bot = request.app.state.bot
+    await bot.api_call(scene.value)
 
 @router.post("/phase")
 async def phase(phase: Validator):

@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 import uvicorn
 
+from ..BTDC import MenestrelBot
 from utils.logger import CustomLogger
 from .routes import router
 
@@ -10,13 +11,14 @@ class MenestrelApi:
 
     VERSION = "1"
 
-    def __init__(self) -> None:
+    def __init__(self, bot: MenestrelBot) -> None:
         self.logger = CustomLogger.get_logger("BKND")
         self.app = FastAPI(title="MenestrelApi",
                            summary="Menestrel Backend API",
                            version=self.VERSION)
 
         self.app.include_router(router)
+        self.app.state.bot = bot
         self.config = uvicorn.Config(self.app, host="0.0.0.0", port=8000, reload=True)
         self.server = uvicorn.Server(self.config)
 
