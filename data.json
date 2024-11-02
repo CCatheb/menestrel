@@ -1,0 +1,868 @@
+{
+    "_default": {
+        "1": {
+            "type": "music",
+            "tags": {
+                "scene": "Ville",
+                "phase": "Exploration"
+            },
+            "path": "Ville/Exploration/1"
+        },
+        "2": {
+            "type": "music",
+            "tags": {
+                "scene": "Ville",
+                "phase": "Exploration"
+            },
+            "path": "Ville/Exploration/2"
+        },
+        "3": {
+            "type": "music",
+            "tags": {
+                "scene": "Ville",
+                "phase": "Exploration"
+            },
+            "path": "Ville/Exploration/3"
+        },
+        "4": {
+            "type": "music",
+            "tags": {
+                "scene": "Ville",
+                "phase": "Combat"
+            },
+            "path": "Ville/Combat/1"
+        },
+        "5": {
+            "type": "music",
+            "tags": {
+                "scene": "Ville",
+                "phase": "Combat"
+            },
+            "path": "Ville/Combat/2"
+        },
+        "6": {
+            "type": "music",
+            "tags": {
+                "scene": "Ville",
+                "phase": "Combat"
+            },
+            "path": "Ville/Combat/3"
+        },
+        "7": {
+            "type": "music",
+            "tags": {
+                "scene": "Ville",
+                "phase": "Repos"
+            },
+            "path": "Ville/Repos/1"
+        },
+        "8": {
+            "type": "music",
+            "tags": {
+                "scene": "Ville",
+                "phase": "Repos"
+            },
+            "path": "Ville/Repos/2"
+        },
+        "9": {
+            "type": "music",
+            "tags": {
+                "scene": "Ville",
+                "phase": "Repos"
+            },
+            "path": "Ville/Repos/3"
+        },
+        "10": {
+            "type": "music",
+            "tags": {
+                "scene": "Village",
+                "phase": "Exploration"
+            },
+            "path": "Village/Exploration/1"
+        },
+        "11": {
+            "type": "music",
+            "tags": {
+                "scene": "Village",
+                "phase": "Exploration"
+            },
+            "path": "Village/Exploration/2"
+        },
+        "12": {
+            "type": "music",
+            "tags": {
+                "scene": "Village",
+                "phase": "Exploration"
+            },
+            "path": "Village/Exploration/3"
+        },
+        "13": {
+            "type": "music",
+            "tags": {
+                "scene": "Village",
+                "phase": "Combat"
+            },
+            "path": "Village/Combat/1"
+        },
+        "14": {
+            "type": "music",
+            "tags": {
+                "scene": "Village",
+                "phase": "Combat"
+            },
+            "path": "Village/Combat/2"
+        },
+        "15": {
+            "type": "music",
+            "tags": {
+                "scene": "Village",
+                "phase": "Combat"
+            },
+            "path": "Village/Combat/3"
+        },
+        "16": {
+            "type": "music",
+            "tags": {
+                "scene": "Village",
+                "phase": "Repos"
+            },
+            "path": "Village/Repos/1"
+        },
+        "17": {
+            "type": "music",
+            "tags": {
+                "scene": "Village",
+                "phase": "Repos"
+            },
+            "path": "Village/Repos/2"
+        },
+        "18": {
+            "type": "music",
+            "tags": {
+                "scene": "Village",
+                "phase": "Repos"
+            },
+            "path": "Village/Repos/3"
+        },
+        "19": {
+            "type": "music",
+            "tags": {
+                "scene": "Ruelle Sombre",
+                "phase": "Exploration"
+            },
+            "path": "Ruelle Sombre/Exploration/1"
+        },
+        "20": {
+            "type": "music",
+            "tags": {
+                "scene": "Ruelle Sombre",
+                "phase": "Exploration"
+            },
+            "path": "Ruelle Sombre/Exploration/2"
+        },
+        "21": {
+            "type": "music",
+            "tags": {
+                "scene": "Ruelle Sombre",
+                "phase": "Exploration"
+            },
+            "path": "Ruelle Sombre/Exploration/3"
+        },
+        "22": {
+            "type": "music",
+            "tags": {
+                "scene": "Ruelle Sombre",
+                "phase": "Combat"
+            },
+            "path": "Ruelle Sombre/Combat/1"
+        },
+        "23": {
+            "type": "music",
+            "tags": {
+                "scene": "Ruelle Sombre",
+                "phase": "Combat"
+            },
+            "path": "Ruelle Sombre/Combat/2"
+        },
+        "24": {
+            "type": "music",
+            "tags": {
+                "scene": "Ruelle Sombre",
+                "phase": "Combat"
+            },
+            "path": "Ruelle Sombre/Combat/3"
+        },
+        "25": {
+            "type": "music",
+            "tags": {
+                "scene": "Ruelle Sombre",
+                "phase": "Repos"
+            },
+            "path": "Ruelle Sombre/Repos/1"
+        },
+        "26": {
+            "type": "music",
+            "tags": {
+                "scene": "Ruelle Sombre",
+                "phase": "Repos"
+            },
+            "path": "Ruelle Sombre/Repos/2"
+        },
+        "27": {
+            "type": "music",
+            "tags": {
+                "scene": "Ruelle Sombre",
+                "phase": "Repos"
+            },
+            "path": "Ruelle Sombre/Repos/3"
+        },
+        "28": {
+            "type": "music",
+            "tags": {
+                "scene": "Plaine",
+                "phase": "Exploration"
+            },
+            "path": "Plaine/Exploration/1"
+        },
+        "29": {
+            "type": "music",
+            "tags": {
+                "scene": "Plaine",
+                "phase": "Exploration"
+            },
+            "path": "Plaine/Exploration/2"
+        },
+        "30": {
+            "type": "music",
+            "tags": {
+                "scene": "Plaine",
+                "phase": "Exploration"
+            },
+            "path": "Plaine/Exploration/3"
+        },
+        "31": {
+            "type": "music",
+            "tags": {
+                "scene": "Plaine",
+                "phase": "Combat"
+            },
+            "path": "Plaine/Combat/1"
+        },
+        "32": {
+            "type": "music",
+            "tags": {
+                "scene": "Plaine",
+                "phase": "Combat"
+            },
+            "path": "Plaine/Combat/2"
+        },
+        "33": {
+            "type": "music",
+            "tags": {
+                "scene": "Plaine",
+                "phase": "Combat"
+            },
+            "path": "Plaine/Combat/3"
+        },
+        "34": {
+            "type": "music",
+            "tags": {
+                "scene": "Plaine",
+                "phase": "Repos"
+            },
+            "path": "Plaine/Repos/1"
+        },
+        "35": {
+            "type": "music",
+            "tags": {
+                "scene": "Plaine",
+                "phase": "Repos"
+            },
+            "path": "Plaine/Repos/2"
+        },
+        "36": {
+            "type": "music",
+            "tags": {
+                "scene": "Plaine",
+                "phase": "Repos"
+            },
+            "path": "Plaine/Repos/3"
+        },
+        "37": {
+            "type": "music",
+            "tags": {
+                "scene": "Marais",
+                "phase": "Exploration"
+            },
+            "path": "Marais/Exploration/1"
+        },
+        "38": {
+            "type": "music",
+            "tags": {
+                "scene": "Marais",
+                "phase": "Exploration"
+            },
+            "path": "Marais/Exploration/2"
+        },
+        "39": {
+            "type": "music",
+            "tags": {
+                "scene": "Marais",
+                "phase": "Exploration"
+            },
+            "path": "Marais/Exploration/3"
+        },
+        "40": {
+            "type": "music",
+            "tags": {
+                "scene": "Marais",
+                "phase": "Combat"
+            },
+            "path": "Marais/Combat/1"
+        },
+        "41": {
+            "type": "music",
+            "tags": {
+                "scene": "Marais",
+                "phase": "Combat"
+            },
+            "path": "Marais/Combat/2"
+        },
+        "42": {
+            "type": "music",
+            "tags": {
+                "scene": "Marais",
+                "phase": "Combat"
+            },
+            "path": "Marais/Combat/3"
+        },
+        "43": {
+            "type": "music",
+            "tags": {
+                "scene": "Marais",
+                "phase": "Repos"
+            },
+            "path": "Marais/Repos/1"
+        },
+        "44": {
+            "type": "music",
+            "tags": {
+                "scene": "Marais",
+                "phase": "Repos"
+            },
+            "path": "Marais/Repos/2"
+        },
+        "45": {
+            "type": "music",
+            "tags": {
+                "scene": "Marais",
+                "phase": "Repos"
+            },
+            "path": "Marais/Repos/3"
+        },
+        "46": {
+            "type": "music",
+            "tags": {
+                "scene": "Cave",
+                "phase": "Exploration"
+            },
+            "path": "Cave/Exploration/1"
+        },
+        "47": {
+            "type": "music",
+            "tags": {
+                "scene": "Cave",
+                "phase": "Exploration"
+            },
+            "path": "Cave/Exploration/2"
+        },
+        "48": {
+            "type": "music",
+            "tags": {
+                "scene": "Cave",
+                "phase": "Exploration"
+            },
+            "path": "Cave/Exploration/3"
+        },
+        "49": {
+            "type": "music",
+            "tags": {
+                "scene": "Cave",
+                "phase": "Combat"
+            },
+            "path": "Cave/Combat/1"
+        },
+        "50": {
+            "type": "music",
+            "tags": {
+                "scene": "Cave",
+                "phase": "Combat"
+            },
+            "path": "Cave/Combat/2"
+        },
+        "51": {
+            "type": "music",
+            "tags": {
+                "scene": "Cave",
+                "phase": "Combat"
+            },
+            "path": "Cave/Combat/3"
+        },
+        "52": {
+            "type": "music",
+            "tags": {
+                "scene": "Cave",
+                "phase": "Repos"
+            },
+            "path": "Cave/Repos/1"
+        },
+        "53": {
+            "type": "music",
+            "tags": {
+                "scene": "Cave",
+                "phase": "Repos"
+            },
+            "path": "Cave/Repos/2"
+        },
+        "54": {
+            "type": "music",
+            "tags": {
+                "scene": "Cave",
+                "phase": "Repos"
+            },
+            "path": "Cave/Repos/3"
+        },
+        "55": {
+            "type": "music",
+            "tags": {
+                "scene": "Cimeti\u00e8re",
+                "phase": "Exploration"
+            },
+            "path": "Cimeti\u00e8re/Exploration/1"
+        },
+        "56": {
+            "type": "music",
+            "tags": {
+                "scene": "Cimeti\u00e8re",
+                "phase": "Exploration"
+            },
+            "path": "Cimeti\u00e8re/Exploration/2"
+        },
+        "57": {
+            "type": "music",
+            "tags": {
+                "scene": "Cimeti\u00e8re",
+                "phase": "Exploration"
+            },
+            "path": "Cimeti\u00e8re/Exploration/3"
+        },
+        "58": {
+            "type": "music",
+            "tags": {
+                "scene": "Cimeti\u00e8re",
+                "phase": "Combat"
+            },
+            "path": "Cimeti\u00e8re/Combat/1"
+        },
+        "59": {
+            "type": "music",
+            "tags": {
+                "scene": "Cimeti\u00e8re",
+                "phase": "Combat"
+            },
+            "path": "Cimeti\u00e8re/Combat/2"
+        },
+        "60": {
+            "type": "music",
+            "tags": {
+                "scene": "Cimeti\u00e8re",
+                "phase": "Combat"
+            },
+            "path": "Cimeti\u00e8re/Combat/3"
+        },
+        "61": {
+            "type": "music",
+            "tags": {
+                "scene": "Cimeti\u00e8re",
+                "phase": "Repos"
+            },
+            "path": "Cimeti\u00e8re/Repos/1"
+        },
+        "62": {
+            "type": "music",
+            "tags": {
+                "scene": "Cimeti\u00e8re",
+                "phase": "Repos"
+            },
+            "path": "Cimeti\u00e8re/Repos/2"
+        },
+        "63": {
+            "type": "music",
+            "tags": {
+                "scene": "Cimeti\u00e8re",
+                "phase": "Repos"
+            },
+            "path": "Cimeti\u00e8re/Repos/3"
+        },
+        "64": {
+            "type": "music",
+            "tags": {
+                "scene": "For\u00eat",
+                "phase": "Exploration"
+            },
+            "path": "For\u00eat/Exploration/1"
+        },
+        "65": {
+            "type": "music",
+            "tags": {
+                "scene": "For\u00eat",
+                "phase": "Exploration"
+            },
+            "path": "For\u00eat/Exploration/2"
+        },
+        "66": {
+            "type": "music",
+            "tags": {
+                "scene": "For\u00eat",
+                "phase": "Exploration"
+            },
+            "path": "For\u00eat/Exploration/3"
+        },
+        "67": {
+            "type": "music",
+            "tags": {
+                "scene": "For\u00eat",
+                "phase": "Combat"
+            },
+            "path": "For\u00eat/Combat/1"
+        },
+        "68": {
+            "type": "music",
+            "tags": {
+                "scene": "For\u00eat",
+                "phase": "Combat"
+            },
+            "path": "For\u00eat/Combat/2"
+        },
+        "69": {
+            "type": "music",
+            "tags": {
+                "scene": "For\u00eat",
+                "phase": "Combat"
+            },
+            "path": "For\u00eat/Combat/3"
+        },
+        "70": {
+            "type": "music",
+            "tags": {
+                "scene": "For\u00eat",
+                "phase": "Repos"
+            },
+            "path": "For\u00eat/Repos/1"
+        },
+        "71": {
+            "type": "music",
+            "tags": {
+                "scene": "For\u00eat",
+                "phase": "Repos"
+            },
+            "path": "For\u00eat/Repos/2"
+        },
+        "72": {
+            "type": "music",
+            "tags": {
+                "scene": "For\u00eat",
+                "phase": "Repos"
+            },
+            "path": "For\u00eat/Repos/3"
+        },
+        "73": {
+            "type": "music",
+            "tags": {
+                "scene": "Temple",
+                "phase": "Exploration"
+            },
+            "path": "Temple/Exploration/1"
+        },
+        "74": {
+            "type": "music",
+            "tags": {
+                "scene": "Temple",
+                "phase": "Exploration"
+            },
+            "path": "Temple/Exploration/2"
+        },
+        "75": {
+            "type": "music",
+            "tags": {
+                "scene": "Temple",
+                "phase": "Exploration"
+            },
+            "path": "Temple/Exploration/3"
+        },
+        "76": {
+            "type": "music",
+            "tags": {
+                "scene": "Temple",
+                "phase": "Combat"
+            },
+            "path": "Temple/Combat/1"
+        },
+        "77": {
+            "type": "music",
+            "tags": {
+                "scene": "Temple",
+                "phase": "Combat"
+            },
+            "path": "Temple/Combat/2"
+        },
+        "78": {
+            "type": "music",
+            "tags": {
+                "scene": "Temple",
+                "phase": "Combat"
+            },
+            "path": "Temple/Combat/3"
+        },
+        "79": {
+            "type": "music",
+            "tags": {
+                "scene": "Temple",
+                "phase": "Repos"
+            },
+            "path": "Temple/Repos/1"
+        },
+        "80": {
+            "type": "music",
+            "tags": {
+                "scene": "Temple",
+                "phase": "Repos"
+            },
+            "path": "Temple/Repos/2"
+        },
+        "81": {
+            "type": "music",
+            "tags": {
+                "scene": "Temple",
+                "phase": "Repos"
+            },
+            "path": "Temple/Repos/3"
+        },
+        "82": {
+            "type": "music",
+            "tags": {
+                "scene": "Taverne",
+                "phase": "Exploration"
+            },
+            "path": "Taverne/Exploration/1"
+        },
+        "83": {
+            "type": "music",
+            "tags": {
+                "scene": "Taverne",
+                "phase": "Exploration"
+            },
+            "path": "Taverne/Exploration/2"
+        },
+        "84": {
+            "type": "music",
+            "tags": {
+                "scene": "Taverne",
+                "phase": "Exploration"
+            },
+            "path": "Taverne/Exploration/3"
+        },
+        "85": {
+            "type": "music",
+            "tags": {
+                "scene": "Taverne",
+                "phase": "Combat"
+            },
+            "path": "Taverne/Combat/1"
+        },
+        "86": {
+            "type": "music",
+            "tags": {
+                "scene": "Taverne",
+                "phase": "Combat"
+            },
+            "path": "Taverne/Combat/2"
+        },
+        "87": {
+            "type": "music",
+            "tags": {
+                "scene": "Taverne",
+                "phase": "Combat"
+            },
+            "path": "Taverne/Combat/3"
+        },
+        "88": {
+            "type": "music",
+            "tags": {
+                "scene": "Taverne",
+                "phase": "Repos"
+            },
+            "path": "Taverne/Repos/1"
+        },
+        "89": {
+            "type": "music",
+            "tags": {
+                "scene": "Taverne",
+                "phase": "Repos"
+            },
+            "path": "Taverne/Repos/2"
+        },
+        "90": {
+            "type": "music",
+            "tags": {
+                "scene": "Taverne",
+                "phase": "Repos"
+            },
+            "path": "Taverne/Repos/3"
+        },
+        "91": {
+            "type": "music",
+            "tags": {
+                "scene": "Montagne",
+                "phase": "Exploration"
+            },
+            "path": "Montagne/Exploration/1"
+        },
+        "92": {
+            "type": "music",
+            "tags": {
+                "scene": "Montagne",
+                "phase": "Exploration"
+            },
+            "path": "Montagne/Exploration/2"
+        },
+        "93": {
+            "type": "music",
+            "tags": {
+                "scene": "Montagne",
+                "phase": "Exploration"
+            },
+            "path": "Montagne/Exploration/3"
+        },
+        "94": {
+            "type": "music",
+            "tags": {
+                "scene": "Montagne",
+                "phase": "Combat"
+            },
+            "path": "Montagne/Combat/1"
+        },
+        "95": {
+            "type": "music",
+            "tags": {
+                "scene": "Montagne",
+                "phase": "Combat"
+            },
+            "path": "Montagne/Combat/2"
+        },
+        "96": {
+            "type": "music",
+            "tags": {
+                "scene": "Montagne",
+                "phase": "Combat"
+            },
+            "path": "Montagne/Combat/3"
+        },
+        "97": {
+            "type": "music",
+            "tags": {
+                "scene": "Montagne",
+                "phase": "Repos"
+            },
+            "path": "Montagne/Repos/1"
+        },
+        "98": {
+            "type": "music",
+            "tags": {
+                "scene": "Montagne",
+                "phase": "Repos"
+            },
+            "path": "Montagne/Repos/2"
+        },
+        "99": {
+            "type": "music",
+            "tags": {
+                "scene": "Montagne",
+                "phase": "Repos"
+            },
+            "path": "Montagne/Repos/3"
+        },
+        "100": {
+            "type": "music",
+            "tags": {
+                "scene": "March\u00e9",
+                "phase": "Exploration"
+            },
+            "path": "March\u00e9/Exploration/1"
+        },
+        "101": {
+            "type": "music",
+            "tags": {
+                "scene": "March\u00e9",
+                "phase": "Exploration"
+            },
+            "path": "March\u00e9/Exploration/2"
+        },
+        "102": {
+            "type": "music",
+            "tags": {
+                "scene": "March\u00e9",
+                "phase": "Exploration"
+            },
+            "path": "March\u00e9/Exploration/3"
+        },
+        "103": {
+            "type": "music",
+            "tags": {
+                "scene": "March\u00e9",
+                "phase": "Combat"
+            },
+            "path": "March\u00e9/Combat/1"
+        },
+        "104": {
+            "type": "music",
+            "tags": {
+                "scene": "March\u00e9",
+                "phase": "Combat"
+            },
+            "path": "March\u00e9/Combat/2"
+        },
+        "105": {
+            "type": "music",
+            "tags": {
+                "scene": "March\u00e9",
+                "phase": "Combat"
+            },
+            "path": "March\u00e9/Combat/3"
+        },
+        "106": {
+            "type": "music",
+            "tags": {
+                "scene": "March\u00e9",
+                "phase": "Repos"
+            },
+            "path": "March\u00e9/Repos/1"
+        },
+        "107": {
+            "type": "music",
+            "tags": {
+                "scene": "March\u00e9",
+                "phase": "Repos"
+            },
+            "path": "March\u00e9/Repos/2"
+        },
+        "108": {
+            "type": "music",
+            "tags": {
+                "scene": "March\u00e9",
+                "phase": "Repos"
+            },
+            "path": "March\u00e9/Repos/3"
+        }
+    }
+}

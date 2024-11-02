@@ -1,6 +1,4 @@
 from configparser import ConfigParser
-from genericpath import isfile
-from typing import List, Optional, Dict
 from tinydb import TinyDB, Query, where
 import random
 import os
@@ -23,7 +21,13 @@ class MusicFinder:
         else:
             self.logger.error("Database not found at given path")
 
-    def get_music(self, scene: str, phase: str) -> str:
+        self.scene = ""
+        self.phase = ""
+        self.meteo = ""
+        self.ambiance = ""
+        self.sfx = ""
+
+    def get_music_by_scene(self, scene: str) -> str:
         """This method finds all musics matching given scene and phase.
         Chooses one randomly if multiple results are given.
 
@@ -35,16 +39,20 @@ class MusicFinder:
             str: Path to the music
         """
         Audio = Query()
-        
-        self.logger.debug(f"Serching music for scene = {scene} and phase = {phase}")
+
+        if not self.phase:
+            self.logger.info("No phase have been set, defaults to 'Exploration'")
+            self.phase = "Exploration"
+
+        self.logger.debug(f"Serching music for scene = {scene} and phase = {self.phase}")
         result = self.db.search(
             (Audio.type == 'music') &
             (Audio.tags['scene'] == scene) &
-            (Audio.tags['phase'] == phase)
+            (Audio.tags['phase'] == self.phase)
         )
 
         if result:
             return random.choice(result)["path"]
 
         self.logger.warning("No music found for specified scene and phase.")
-        return None
+        return "Not found"

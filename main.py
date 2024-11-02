@@ -1,7 +1,6 @@
 import discord
 from src.BKND import MenestrelApi
 from src.BTDC import MenestrelBot
-from src.LBMG import MusicFinder
 
 import asyncio
 import configparser
@@ -15,7 +14,7 @@ async def main():
 
     config = load_config()
     
-    bot = MenestrelBot(intents=discord.Intents.all())
+    bot = MenestrelBot(config, intents=discord.Intents.all())
     api = MenestrelApi(config, bot)
     await asyncio.gather(api.run(),
                         bot.start(config["Discord"]["Token"]))

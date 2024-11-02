@@ -13,7 +13,7 @@ async def scene(request: Request, scene: Validator):
     text = "Scene - " + scene.value
     logger.info(text)
     bot = request.app.state.bot
-    await bot.api_call(text)
+    await bot.change_scene(scene.value)
 
 @router.post("/phase")
 async def phase(request: Request, phase: Validator):
