@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 // Retirer la classe active si elle est déjà présente
                 button.classList.remove("active");
             }
-
+            make_request("scene", button.textContent);
         });
 
     });
@@ -107,7 +107,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 // Retirer la classe active si elle est déjà présente
                 button.classList.remove("active");
             }
-
+            make_request("phase", button.textContent);
         });
 
     });
@@ -143,7 +143,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 // Retirer la classe active si elle est déjà présente
                 button.classList.remove("active");
             }
-
+            make_request("meteo", button.textContent);
         });
 
     });
@@ -167,9 +167,27 @@ document.addEventListener("DOMContentLoaded", function() {
 
         button.addEventListener("click", function() {
             button.classList.toggle("active");
+            make_request("ambiance", button.textContent);
         });
         
     });
 
 });
   
+function make_request(group, value) {
+
+    url = "http://192.168.0.33:8000/" + group
+
+    fetch(url, {
+        method: "POST",
+        headers: {
+            "Content-type": "application/json; charset=UTF-8"
+          },
+        "body": JSON.stringify({
+            "value": value
+        })
+    })
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch(error => console.error('Error:', error));
+}

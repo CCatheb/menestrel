@@ -15,7 +15,7 @@ async def main():
     config = load_config()
 
     bot = MenestrelBot(intents=discord.Intents.all())
-    api = MenestrelApi(bot)
+    api = MenestrelApi(config, bot)
     await asyncio.gather(api.run(),
                          bot.start(config["Discord"]["Token"]))
 
