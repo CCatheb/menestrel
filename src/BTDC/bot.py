@@ -27,6 +27,11 @@ class MenestrelBot(discord.Client):
         if message.content.startswith("!ping"):
             await message.reply("Pong!")
 
+        if message.content == "!join":
+            channel = self.get_channel(1219376772236312609)
+            await channel.connect()
+
+
     async def api_call(self, value):
 
         channel = self.get_channel(1219376772236312608)
@@ -35,5 +40,9 @@ class MenestrelBot(discord.Client):
     async def change_scene(self, scene: str):
         channel = self.get_channel(1219376772236312608)
         result = self.mf.get_music_by_scene(scene)
-        # TODO: Do not send msg if not found
+        await channel.send(result)
+
+    async def change_phase(self, phase: str):
+        channel = channel = self.get_channel(1219376772236312608)
+        result = self.mf.get_music_by_phase(phase)
         await channel.send(result)

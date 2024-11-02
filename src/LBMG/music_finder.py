@@ -23,22 +23,34 @@ class MusicFinder:
 
         self.scene = ""
         self.phase = ""
-        self.meteo = ""
-        self.ambiance = ""
+        self.meteo = {
+            "Pluie":0,
+            "Orage":0,
+            "Vent":0 
+        }
+        self.ambiance = {
+            "Rivière":0,
+            "Cascade":0,
+            "Vague":0,
+            "Murmures":0,
+            "Feu de camp":0,
+            "Cigales":0
+        }
         self.sfx = ""
 
     def get_music_by_scene(self, scene: str) -> str:
-        """This method finds all musics matching given scene and phase.
+        """This method finds all musics matching given scene.
         Chooses one randomly if multiple results are given.
 
         Args:
             scene (str): Asked scene
-            phase (str): Asked phase
 
         Returns:
             str: Path to the music
         """
         Audio = Query()
+
+        self.scene = scene
 
         if not self.phase:
             self.logger.info("No phase have been set, defaults to 'Exploration'")
@@ -49,6 +61,37 @@ class MusicFinder:
             (Audio.type == 'music') &
             (Audio.tags['scene'] == scene) &
             (Audio.tags['phase'] == self.phase)
+        )
+
+        if result:
+            return random.choice(result)["path"]
+
+        self.logger.warning("No music found for specified scene and phase.")
+        return "Not found"
+    
+    def get_music_by_phase(self, phase: str) -> str:
+        """This method finds all musics matching given phase.
+        Chooses one randomly if multiple results are given.
+
+        Args:
+            phase (str): Asked phase
+
+        Returns:
+            str: Path to the music
+        """
+        Audio = Query()
+
+        if not self.scene:
+            self.logger.info("No scene have been set, defaults to 'Ville'")
+            self.scene = "Ville"
+
+        self.phase = phase
+
+        self.logger.debug(f"Serching music for scene = {phase} and phase = {self.phase}")
+        result = self.db.search(
+            (Audio.type == 'music') &
+            (Audio.tags['scene'] == self.scene) &
+            (Audio.tags['phase'] == phase)
         )
 
         if result:

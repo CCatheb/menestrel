@@ -20,7 +20,7 @@ async def phase(request: Request, phase: Validator):
     text = "Phase - " + phase.value
     logger.info(text)
     bot = request.app.state.bot
-    await bot.api_call(text)
+    await bot.change_phase(phase.value)
 
 @router.post("/meteo")
 async def meteo(request: Request, meteo: Validator):
