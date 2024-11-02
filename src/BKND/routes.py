@@ -10,26 +10,42 @@ class Validator(BaseModel):
 
 @router.post("/scene")
 async def scene(request: Request, scene: Validator):
-    logger.info("scene " + scene.value)
+    text = "Scene - " + scene.value
+    logger.info(text)
     bot = request.app.state.bot
-    await bot.api_call(scene.value)
+    await bot.api_call(text)
 
 @router.post("/phase")
-async def phase(phase: Validator):
-    logger.info("phase " + phase.value)
+async def phase(request: Request, phase: Validator):
+    text = "Phase - " + phase.value
+    logger.info(text)
+    bot = request.app.state.bot
+    await bot.api_call(text)
 
 @router.post("/meteo")
-async def meteo(meteo: Validator):
-    logger.info("meteo " + meteo.value)
+async def meteo(request: Request, meteo: Validator):
+    text = "Meteo - " + meteo.value
+    logger.info(text)
+    bot = request.app.state.bot
+    await bot.api_call(text)
 
 @router.post("/ambiance")
-async def ambiance(ambiance: Validator):
-    logger.info("ambiance " + ambiance.value)
+async def ambiance(request: Request, ambiance: Validator):
+    text = "Ambiance - " + ambiance.value
+    logger.info(text)
+    bot = request.app.state.bot
+    await bot.api_call(text)
 
 @router.post("/sfx")
-async def sfx(sfx: Validator):
-    logger.info("sfx " + sfx.value)
+async def sfx(request: Request, sfx: Validator):
+    text = "SFX - " + sfx.value
+    logger.info(text)
+    bot = request.app.state.bot
+    await bot.api_call(text)
 
 @router.post("/general")
-async def general(action: Validator):
-    logger.info("action " + action.value)
+async def general(request: Request, action: Validator):
+    text = "General - " + action.value
+    logger.info(text)
+    bot = request.app.state.bot
+    await bot.api_call(text)
